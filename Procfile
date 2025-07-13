@@ -1,0 +1,1 @@
+web: gunicorn nextgen_netlab_admin.wsgi

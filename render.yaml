@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: nextgen-admin
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn nextgen_netlab_admin.wsgi"
+    plan: free

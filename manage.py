@@ -1,1 +1,1 @@
-# Placeholder for Django's manage.py
+# Django manage.py placeholder
