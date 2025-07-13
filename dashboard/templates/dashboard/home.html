@@ -1,1 +1,8 @@
-<h1>Welcome to NextGen Admin Panel</h1><p>Upload and manage lab cases here.</p>
+{% if user.is_authenticated %}
+  <h1>Welcome, {{ user.username }}</h1>
+  <p>This is your secure dashboard.</p>
+  <p><a href="/logout">Logout</a></p>
+{% else %}
+  <p>You are not logged in.</p>
+  <a href="/login">Login</a>
+{% endif %}

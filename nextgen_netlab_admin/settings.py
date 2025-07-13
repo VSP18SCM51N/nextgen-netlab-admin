@@ -1,7 +1,7 @@
 
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SECRET_KEY = 'replace-this-key'
+SECRET_KEY = 'your-secret-key'
 DEBUG = True
 ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = ['dashboard', 'django.contrib.admin', 'django.contrib.auth', 'django.contrib.contenttypes', 'django.contrib.sessions', 'django.contrib.messages', 'django.contrib.staticfiles']
@@ -12,3 +12,4 @@ WSGI_APPLICATION = 'nextgen_netlab_admin.wsgi.application'
 DATABASES = {'default': {'ENGINE': 'django.db.backends.sqlite3','NAME': os.path.join(BASE_DIR, 'db.sqlite3'),}}
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+LOGIN_URL = '/login/'
