@@ -7,4 +7,3 @@ services:
     startCommand: "gunicorn nextgen_netlab_admin.wsgi"
     plan: free
     preDeployCommand: "python manage.py migrate && python manage.py create_admin"
-
